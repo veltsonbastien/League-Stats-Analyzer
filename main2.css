@@ -1,0 +1,399 @@
+body
+{
+background: white;
+margin: 0;
+padding: 0;
+width: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+-webkit-font-smoothing: antialiased;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+
+.headerBar
+{
+ background: #2574A9;
+ overflow: hidden;
+}
+
+.headerBar a {
+    font-size: 15px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+.headerBar a:hover
+{
+   color: darkgrey;
+}
+
+
+
+.headerBar ul{
+    list-style: none;
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.headerBar li
+{
+    margin-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titleBar
+{
+margin-left:10px;
+float: left;
+font-size: 11px;
+}
+
+
+#display_scores{
+position: absolute;
+display: inline-flex;
+margin-left: 42.5%;
+margin-top: -50px;
+}
+
+#school_score1, #school_score2
+{
+ padding-right: 100px;
+ font-size: 15px;
+ text-align:CENTER;
+
+}
+
+#pageTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.user_name
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+#display_name
+{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+float: right;
+ font-size: 14px;
+ margin-top: -5px;
+ margin-right: 2.5%;
+}
+
+#images
+{
+    position: relative;
+}
+
+#images img
+{
+    position: absolute;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#user_logo{
+ margin-top: -9px;
+ margin-left: 10.25%; 
+}
+
+
+#choose_image
+{
+ margin-top: -9px;
+ margin-left: 10.25%;
+ opacity: 0;
+}
+
+#choose_image:hover
+{
+    opacity: 0.6;
+
+}
+
+#images:hover .tooltiptext
+{
+    visibility: visible;
+  
+
+}
+
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color:rgba(0,0,0,0.9);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 105%;
+}
+
+
+.bannerBar
+{
+    background: #1E8BC3;
+    overflow: hidden; 
+}
+
+
+ h3 {
+   margin-left: 5%;
+   font-size: 12px;
+   color: #E4F1FE;
+}
+
+#matchTitle
+{
+  color: black;
+  font-size: 28px;
+  font-weight: 200;
+  margin-left: 20px;
+  border: 1px solid rgb(15, 15, 15);
+  border-radius: 5px;
+  padding: 5px;
+  position: static;
+  opacity: 0.8;
+  
+}
+
+.selectPrompt
+{
+    display: inline-flex;
+    margin-top: -20px;
+    padding-top: 0;
+    float:left;
+    width: 150%;
+}
+
+#selectPromptText{
+    font-weight: 1px;
+    margin-top: 35px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+
+#team_select 
+{
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    height: 30px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+#timer
+{
+margin-left: 48.25%;
+margin-top: 15px;
+border: 1px solid black;
+border-radius: 5px;
+padding-left: 30px;
+padding: 10px;
+width: 220px;
+height: 50px;
+
+-webkit-animation: movein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: movein 2s; /* Firefox < 16 */
+-ms-animation: movein 2s; /* Internet Explorer */
+ -o-animation: movein 2s; /* Opera < 12.1 */
+ animation: movein 2s;
+animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode: forwards;
+}
+
+#timer:hover
+{
+  border: 1px solid grey; 
+  -webkit-animation: moveout 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: moveout 1.5s; /* Firefox < 16 */
+  -ms-animation: moveout 1.5s; /* Internet Explorer */
+   -o-animation: moveout 1.5s; /* Opera < 12.1 */
+   animation: moveout 1.5s;
+   animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+
+
+#time_remaining
+{
+ margin-top: -5px;
+ text-align: CENTER;
+ font-size: 30px;
+}
+
+#timer_buttons
+{
+ display: inline-block;
+ margin-left: 155px;
+ margin-top: -85px;
+ padding: 10px;
+ position: absolute;
+
+}
+
+#timer_on
+{
+ margin-bottom: 5px;
+}
+
+.startingLineup
+{
+ display: inline-flex;
+ margin-top: -80px;
+ margin-left: -2.5%;
+
+}
+
+#playerImage
+{
+    position: relative;
+    margin-top: 110px;
+    margin-left: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    z-index: 1;
+}
+
+#playerImage:hover
+{
+    background: #2574A9;
+    
+}
+
+
+#playerInformation 
+{
+    margin-top: 0px;
+    margin-left: 34%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#playerName1, #playerName2, #playerName3, #playerName4, #playerName5
+{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#seatNumber
+{
+ margin-top: -12.5px;
+ margin-left: 52.5px;
+ font-size: 15px;
+}
+
+#player_apt1, #player_apt2, #player_apt3, #player_apt4, #player_apt5
+{
+    margin-top: -4px;
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+#player_strong1, #player_strong2, #player_strong3, #player_strong4, #player_strong5
+{
+    margin-top: -10px;
+    margin-left: 0px; 
+    font-size: 15px;
+}
+
+#player_opi1, #player_opi2 , #player_opi3 , #player_opi4, #player_opi5
+{
+    margin-top: -10px;
+    margin-left: 0px; 
+    font-size: 15px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes example {
+    0%   { margin-left: 100px;}
+    
+}
+
+@keyframes dropdown {
+    0%   { margin-top: -100px;}
+    
+}
+
+@keyframes moveup {
+    0%   { margin-top: 35.5%;}
+    
+}
+
+@keyframes moveout {
+
+    from  { margin-left: 48.25%;}
+    to  { margin-left: 35.5%;}
+    
+}
+
+@keyframes movein {
+
+    from { margin-left: 35.5%}
+    to { margin-left: 48.25%;}
+    
+}
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML> 
+<html>
+
+<head>
+    <script src = "script.js" ></script>
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <title> League Stats </title>
+</head>
+
+<body onload = "schoolPageLoad()" >
+ <div class = "container">
+  <div class = "headerBar" >
+        <div class = "titleBar"> <h1 id = "pageTitle" > MEDIAN </h1> </div>
+        <ul> 
+            <li style = "  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 1s; /* Firefox < 16 */
+                            -ms-animation: fadein 1s; /* Internet Explorer */
+                            -o-animation: fadein 1s; /* Opera < 12.1 */
+                            animation: fadein 1s;" >
+                            <a href = "matchday.html"> Match Day </a> </li>
+            <li style = "  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 2s; /* Firefox < 16 */
+                            -ms-animation: fadein 2s; /* Internet Explorer */
+                            -o-animation: fadein 2s; /* Opera < 12.1 */
+                            animation: fadein 2s;" > 
+                            <a href = "match_schedules.html"> Match Schedules </a> </li>
+            <li style = "  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 3s; /* Firefox < 16 */
+                            -ms-animation: fadein 3s; /* Internet Explorer */
+                            -o-animation: fadein 3s; /* Opera < 12.1 */
+                            animation: fadein 3s;" > 
+                        <a href = "#resources.html"> Team Roster </a> </li>
+        <li style = "  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 3s; /* Firefox < 16 */
+                            -ms-animation: fadein 3s; /* Internet Explorer */
+                            -o-animation: fadein 3s; /* Opera < 12.1 */
+                            animation: fadein 3s;" > 
+                        <a href = "#resources.html"> Resources </a> </li>
+            <li style = "  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 4s; /* Firefox < 16 */
+                            -ms-animation: fadein 4s; /* Internet Explorer */
+                            -o-animation: fadein 4s; /* Opera < 12.1 */
+                            animation: fadein 4s;" >
+                    <a href = "#opponent_stats.html"> Opponent Stats </a> </li>
+            <li style = "  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+                            -moz-animation: fadein 5s; /* Firefox < 16 */
+                            -ms-animation: fadein 5s; /* Internet Explorer */
+                            -o-animation: fadein 5s; /* Opera < 12.1 */
+                            animation: fadein 5s;" >
+                            <a href = "#settings.html"> Settings </a> </li>
+        </ul>
+
+        <div class = "user_name">  
+        <div id = "images" >
+            <img src = "C:\Users\H P\Desktop\League Stats\user_icon.png"  id= "user_logo" width = "30px" height = "30px" alt = "User" > 
+            <img src = "C:\Users\H P\Desktop\League Stats\choose_image.png" id = "choose_image" width = "30px" height = "30px" alt = "Choose Image">
+            <div class="tooltip"> <span class="tooltiptext"> Change Image </span> </div>
+            </div>
+            <h2 id = "display_name" > usernam </h2>
+        </div>
+    </div> 
+
+</div>
+
+<!-- SECOND BAR -->
+
+<div class = "bannerBar" > <h3 id = "name" > Welcome </h3> </div>
+
+<!-- BODY -->
+
+<div class = "container" >
+ <img src = "C:\Users\H P\Desktop\League Stats\background_image.jpg" id = "background_image"  width = "1200px" height = "500px" alt = "Background"> 
+  <div class = "paragraph_header" > <p > Keep Track of Your Team's Stats </p> </div>
+<br> 
+<div class = "paragraph_intro" > 
+        <p > <strong> With Median, you can use player statistics to figure out the best game plan when it comes to your next match </strong>  </p> 
+</div>
+<div class = "paragraph_title" > <p> <strong> Functionalities: </strong> </p> </div>
+    <div class = "paragraph_body" > 
+         <ul> 
+            <li>   Gives recommended training regimens based on opponent data  </li>
+            <li> Provides a detailed report on each player, based on strengths and weaknesses  </li>
+            <li>  Manage Resources that players can use to improve their skills  </li>
+         </ul>
+        </div>
+
+        <div class = "paragraph_footer" > 
+                <p > <strong> Click any of the links above to get stated! </strong> </p> 
+            </div>
+        </div>
+
+<script type="text/javascript">
+  document.getElementById("display_name").innerHTML = person.fullName();
+</script>
+
+</body>
+
+</html>
